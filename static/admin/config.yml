@@ -71,8 +71,4 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
           - {label: Title, name: title1, widget: string}
           - {label: Image, name: image1, widget: image}
-            label: "Test field"
-            name: "testfield"
-            widget: "object"
-            fields:
-              - {label: "Contenido de presentación", name: "body", widget: "markdown"}
+          - {label: "Contenido 1", name: "content1", widget: object, fields: [{label: "Texto", name: body, widget: markdown}]}
