@@ -37,7 +37,7 @@ console.log('POST........ :', data);
         <LandingPageTemplate 
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
             title1={post.frontmatter.title1}
-            content1="sdd" />
+            content1={post.frontmatter.content1.body} />
     </TemplateWrapper2>
   )
 }
@@ -53,6 +53,9 @@ export const landingPageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "landing-page" } }) {
       frontmatter {
         title1
+        content1 {
+            body
+        }
         image1 {
             childImageSharp {
                 fluid {
