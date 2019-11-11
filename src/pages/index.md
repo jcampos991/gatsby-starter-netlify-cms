@@ -4,7 +4,7 @@ title1: Hola Mundo
 image1: /img/bitmap-copy.png
 content1:
   body: >-
-    Bienvenido a Urban 9/60, un proyecto innovador de vivienda ubicado en el
+    **Bienvenido a Urban 9/60**, un proyecto innovador de vivienda ubicado en el
     exclusivo sector de Chapinero Central, que ofrece modernos apartaestudios
     entre 17 y 18 metros cuadrados.
 
