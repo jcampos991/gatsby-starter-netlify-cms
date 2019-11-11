@@ -28,7 +28,7 @@ export const LandingPageTemplate = ({
 } 
 const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data
-
+    console.log('POST :', post);
   return (
     <TemplateWrapper2>
         <LandingPageTemplate 
