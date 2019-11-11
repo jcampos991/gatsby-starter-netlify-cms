@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-Regular.svg#Avenir Next LT Pro') format('svg');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Demi.eot');
+    src: url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Demi.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-Demi.svg#Avenir Next LT Pro') format('svg');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-It.eot');
+    src: url('../fonts/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-It.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-It.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-It.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-It.svg#Avenir Next LT Pro') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Bold.eot');
+    src: url('../fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Bold.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-Bold.svg#Avenir Next LT Pro') format('svg');
+    font-weight: bold;
+}
