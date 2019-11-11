@@ -48,10 +48,10 @@ export default LandingPage
 export const landingPageQuery = graphql`
   query LandingPage {
     markdownRemark(frontmatter: { templateKey: { eq: "landing-page" } }) {
-        frontmatter {
-          title1
-          image1 
-        }
+      frontmatter {
+        title1
+        image1
       }
+    }
   }
 `
