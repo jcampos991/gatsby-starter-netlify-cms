@@ -10,14 +10,16 @@ import PostList from '../components/PostList';
 
 export const LandingPageTemplate = ({
     image1,
-    title1
+    title1,
+    content1
 }) => {
     return (
         <div className="main">
           <div className="t-bg">
               <Presentation 
                   img={image1}
-                  principalTitle={title1} />
+                  principalTitle={title1}
+                  content={content1} />
               <CommonSpaces />
               <YourSpace />
           </div>
@@ -29,12 +31,13 @@ export const LandingPageTemplate = ({
 const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data
 
-console.log('post :', post);
+console.log('POST........ :', data);
   return (
     <TemplateWrapper2>
         <LandingPageTemplate 
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
-            title1={post.frontmatter.title1} />
+            title1={post.frontmatter.title1}
+            content1="sdd" />
     </TemplateWrapper2>
   )
 }

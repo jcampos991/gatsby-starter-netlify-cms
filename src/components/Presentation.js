@@ -2,7 +2,8 @@ import React from 'react'
 
 const Presentation = ({
     img,
-    principalTitle
+    principalTitle,
+    content
 }) => {
     return(
         <div className="featured">
@@ -20,6 +21,7 @@ const Presentation = ({
                             {/* <h2>Área cuadrada <br /> Construyendo toda una vida</h2> */}
                         <h2>{principalTitle}</h2>
                         </div>
+                        {content}
                         <p className="text-justify">Bienvenido a Urban 9/60, un proyecto innovador de vivienda
                             ubicado en el exclusivo sector de Chapinero Central, que ofrece modernos apartaestudios
                             entre 17 y 18 metros cuadrados. </p>
