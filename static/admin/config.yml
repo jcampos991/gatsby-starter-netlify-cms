@@ -71,4 +71,4 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
           - {label: Title, name: title1, widget: string}
           - {label: Image, name: image1, widget: image}
-          - {label: "Contenido de presentación", name: content1, widget: markdown}
+          # - {label: "Contenido de presentación", name: content1, widget: markdown}
