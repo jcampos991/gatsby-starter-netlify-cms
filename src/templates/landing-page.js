@@ -28,11 +28,12 @@ export const LandingPageTemplate = ({
 } 
 const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data
-  
+
+
   return (
     <TemplateWrapper2>
         <LandingPageTemplate 
-            image1={post.frontmatter.image1}
+            image1="/img/bitmap-copy.png"
             title1={post.frontmatter.title1} />
     </TemplateWrapper2>
   )
@@ -50,7 +51,13 @@ export const landingPageQuery = graphql`
       html
       frontmatter {
         title1
-        image1
+        image1 {
+            childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
       }
     }
   }
