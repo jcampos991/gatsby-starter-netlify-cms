@@ -28,12 +28,12 @@ export const LandingPageTemplate = ({
 } 
 const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data
-    console.log('POST :', post);
+  
   return (
     <TemplateWrapper2>
         <LandingPageTemplate 
-            image1="/img/bitmap-copy.png"
-            title1="Construyendo una arquitectura custom" />
+            image1={post.frontmatter.image1}
+            title1={post.frontmatter.title1} />
     </TemplateWrapper2>
   )
 }
@@ -49,7 +49,8 @@ export const landingPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
+        title1
+        image1
       }
     }
   }
