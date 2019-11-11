@@ -46,19 +46,12 @@ LandingPage.propTypes = {
 export default LandingPage
 
 export const landingPageQuery = graphql`
-  query LandingPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title1
-        image1 {
-            childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
+  query LandingPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "landing-page" } }) {
+        frontmatter {
+          title1
+          image1 
         }
       }
-    }
   }
 `
