@@ -74,3 +74,4 @@ collections:
           - {label: "Contenido 1", name: "content1", widget: object, fields: [{label: "Texto", name: body, widget: markdown}]}
           - {label: "Ubicación", name: "ubication", widget: object, fields: [{label: "Dirección de habitación", name: address, widget: string}, {label: "Localidad", name: location, widget: string}]}
           - {label: "Característica 1", name: "feature1", widget: object, fields: [{label: "Título", name: title, widget: string}, {label: "Descripción", name: description, widget: text}]}
+          - {label: "Galeria de imágenes", name: gallery, widget: object, fields: [{label: "Fotos", name: photos, widget: list, fields: [{label: Image, name: image, widget: image}, {label: "Título de imagen", name: title, widget: string}, {label: "Texto alternativo", name: alt, widget: string}]}]}

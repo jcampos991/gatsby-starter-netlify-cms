@@ -42,7 +42,7 @@ console.log('POST........ :', data);
         <LandingPageTemplate 
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
             title1={post.frontmatter.title1}
-            content1="kjjfdkkgdkflgj"
+            content1={post.frontmatter.content1.body}
             ubication={post.frontmatter.ubication}
             feature1={post.frontmatter.feature1} />
     </TemplateWrapper2>
@@ -61,6 +61,9 @@ export const landingPageQuery = graphql`
         html
       frontmatter {
         title1
+        content1 {
+          body
+        }
         ubication {
           address
           location
