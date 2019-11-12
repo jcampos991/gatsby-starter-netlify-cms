@@ -1,6 +1,6 @@
 ---
 templateKey: landing-page
-title1: Este es otro texto
+title1: Área cuadrada Construyendo toda una vida
 image1: /img/bitmap.png
 alt: Mi imagen principal
 content1:
@@ -40,25 +40,33 @@ feature3:
   title: Conoce aún más...
 gallery:
   photos:
-    - image: /img/Cowork.png
+    - alt: Coworking
+      image: /img/Cowork.png
       title: Coworking
-      alt: Coworking
-    - image: /img/BBQ.png
+    - alt: Zona con BBQ Urban 960
+      image: /img/BBQ.png
       title: Zona con BBQ
-      alt: Zona con BBQ Urban 960
-    - image: /img/Piscina.png
+    - alt: Piscina
+      image: /img/Piscina.png
       title: Piscina
-      alt: Piscina
-    - image: /img/Mascotas.png
+    - alt: Patio de mascotas
+      image: /img/Mascotas.png
       title: Mascotas
-      alt: Patio de mascotas
-    - image: /img/SalaDeJuegos.png
+    - alt: Sala de juegos
+      image: /img/SalaDeJuegos.png
       title: Sala de juegos
-      alt: Sala de juegos
+    - alt: Texto alternativo para el cafe
+      image: /img/blog-index.jpg
+      title: Café
+feature2:
+  description: >-
+    A través del siguiente vídeo, URBAN 9/60 te da la bienvenida a sus cómodos y
+    bien distribuidos apartaestudios, con espacios indispensables para vivir y
+    disfrutar de un hogar con todo lo necesario.
+  title: Tus Espacios
 video:
-  urlVideo: https://www.youtube.com/embed/VVX5HWEElys
-  width: 560
   height: 315
+<<<<<<< HEAD
 previewBlog: 
   image: /img/bitmap_2.png
   alt: conoce sobre chapinero
@@ -68,6 +76,11 @@ previewBlog:
 
 
     ```
+=======
+  urlVideo: 'https://www.youtube.com/embed/VVX5HWEElys'
+  width: 560
+---
+>>>>>>> ce5d2958f54262019dfba399d78977882e11a361
 
     'Actualmente, y según el último censo demográfico, cuenta con 125.750 habitantes, y se encuentra dividido en tres sectores urbanos: Chapinero, El Lago y Chicó. A su vez, Chapinero se divide en Alto y Central.'
 
