@@ -59,7 +59,7 @@ feature2:
   title: Tus Espacios
 video:
   height: 315
-  urlVideo: 'https://www.youtube.com/watch?v=Lu_nm12ZBJ0'
+  urlVideo: 'https://www.youtube.com/embed/VVX5HWEElys'
   width: 560
 ---
 
