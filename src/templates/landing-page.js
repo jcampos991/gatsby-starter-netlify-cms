@@ -11,7 +11,8 @@ import PostList from '../components/PostList';
 export const LandingPageTemplate = ({
     image1,
     title1,
-    content1
+    content1,
+    ubication
 }) => {
     return (
         <div className="main">
@@ -19,7 +20,8 @@ export const LandingPageTemplate = ({
               <Presentation 
                   img={image1}
                   principalTitle={title1}
-                  content={content1} />
+                  content={content1}
+                  ubication={ubication} />
               <CommonSpaces />
               <YourSpace />
           </div>
@@ -37,7 +39,8 @@ console.log('POST........ :', data);
         <LandingPageTemplate 
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
             title1={post.frontmatter.title1}
-            content1="kjjfdkkgdkflgj" />
+            content1="kjjfdkkgdkflgj"
+            ubication={post.frontmatter.ubication} />
     </TemplateWrapper2>
   )
 }
@@ -54,6 +57,10 @@ export const landingPageQuery = graphql`
         html
       frontmatter {
         title1
+        ubication {
+          address
+          location
+        }
         image1 {
             childImageSharp {
                 fluid {

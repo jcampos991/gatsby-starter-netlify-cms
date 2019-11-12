@@ -3,7 +3,8 @@ import React from 'react'
 const Presentation = ({
     img,
     principalTitle,
-    content
+    content,
+    ubication
 }) => {
     return(
         <div className="featured">
@@ -55,8 +56,8 @@ const Presentation = ({
                             </ul>
                         </div>
                         <div className="ubication">
-                            <p>Calle 60 #9-34 Chapinero Central </p>
-                            <span>Chapinero, Bogotá Colombia</span>
+                            <p>{ubication.address}</p>
+                            <span>{ubication.location}</span>
                         </div>
                     </div>
                 </div>
