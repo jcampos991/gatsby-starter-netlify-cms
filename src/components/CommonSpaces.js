@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react'
 // const module = typeof window !== `undefined` ? require("module") : null
 const InfiniteCarousel = typeof window !== `undefined` ? require("react-leaf-carousel") : null
 
-const CommonSpaces = () => {
+const CommonSpaces = ({
+    title,
+    description
+}) => {
     const [carousel, setCarousel] = useState(null);
     useEffect(() => {
         const component = <InfiniteCarousel.default
@@ -77,9 +80,8 @@ const CommonSpaces = () => {
         <div className="yourspace anoth">
             <div className="container">
                 <div className="titl">
-                    <h2>Espacios Comunes</h2>
-                    <p className="par">Los espacios comunes complementan nuestro propósito de brindar calidad de vida y
-                        satisfacción habitacional, por ello las zonas recreacionales hacen parte de nosotros.</p>
+                    <h2>{title}</h2>
+                    <p className="par">{description}</p>
                 </div>
                 <div className="spaces">
                     {carousel}

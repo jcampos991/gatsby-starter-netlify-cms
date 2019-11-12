@@ -12,7 +12,8 @@ export const LandingPageTemplate = ({
     image1,
     title1,
     content1,
-    ubication
+    ubication,
+    feature1
 }) => {
     return (
         <div className="main">
@@ -22,7 +23,9 @@ export const LandingPageTemplate = ({
                   principalTitle={title1}
                   content={content1}
                   ubication={ubication} />
-              <CommonSpaces />
+              <CommonSpaces 
+                title={feature1.title}
+                description={feature1.description} />
               <YourSpace />
           </div>
           <PrincipalPost />
@@ -40,7 +43,8 @@ console.log('POST........ :', data);
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
             title1={post.frontmatter.title1}
             content1="kjjfdkkgdkflgj"
-            ubication={post.frontmatter.ubication} />
+            ubication={post.frontmatter.ubication}
+            feature1={post.frontmatter.feature1} />
     </TemplateWrapper2>
   )
 }
@@ -60,6 +64,10 @@ export const landingPageQuery = graphql`
         ubication {
           address
           location
+        }
+        feature1 {
+          title
+          description
         }
         image1 {
             childImageSharp {
