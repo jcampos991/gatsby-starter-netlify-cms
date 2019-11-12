@@ -31,6 +31,10 @@ feature1:
     vida y satisfacción habitacional, por ello las zonas recreacionales hacen
     parte de nosotros.
   title: Espacios Comunes
+feature2:
+  description: >-
+    A través del siguiente vídeo, URBAN 9/60 te da la bienvenida a sus cómodos y bien distribuidos apartaestudios, con espacios indispensables para vivir y disfrutar de un hogar con todo lo necesario.
+  title: Tus Espacios
 gallery:
   photos:
     - image: /img/Cowork.png
@@ -48,5 +52,9 @@ gallery:
     - image: /img/SalaDeJuegos.png
       title: Sala de juegos
       alt: Sala de juegos
+video:
+  urlVideo: https://www.youtube.com/embed/VVX5HWEElys
+  width: 560
+  height: 315
 ---
 
