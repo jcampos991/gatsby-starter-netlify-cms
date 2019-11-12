@@ -1,4 +1,7 @@
 import React from 'react'
+import showdown from 'showdown'
+
+const converter = new showdown.Converter()
 
 const Presentation = ({
     img,
@@ -23,7 +26,8 @@ const Presentation = ({
                             {/* <h2>Área cuadrada <br /> Construyendo toda una vida</h2> */}
                         <h2>{principalTitle}</h2>
                         </div>
-                        <div className="text-justify" dangerouslySetInnerHTML={{ __html: content }} />
+                        <div
+                            className="text-justify" dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }} />
                         {/* <p className="text-justify">Bienvenido a Urban 9/60, un proyecto innovador de vivienda
                             ubicado en el exclusivo sector de Chapinero Central, que ofrece modernos apartaestudios
                             entre 17 y 18 metros cuadrados. </p>

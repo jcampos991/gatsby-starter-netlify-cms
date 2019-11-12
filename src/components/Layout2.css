@@ -117,9 +117,9 @@ ul{
 .featured .detail .titl h2{
     color: #212121;
 }
-.featured .detail > p{
+.featured .detail div > p{
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #767676;
     line-height: 1.83;
 }

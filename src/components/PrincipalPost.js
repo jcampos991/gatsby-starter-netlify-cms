@@ -1,4 +1,7 @@
 import React from 'react'
+import showdown from 'showdown'
+
+const converter = new showdown.Converter()
 
 const PrincipalPost = ({
     post
@@ -12,7 +15,8 @@ const PrincipalPost = ({
                         <h4>{post.title}</h4>
                     </div>
                     <div className="col-md-6" id="article">
-                        {post.column1}
+                    <div
+                        className="text-justify" dangerouslySetInnerHTML={{ __html: converter.makeHtml(post.column1) }} />
                         {/* <p>Chapinero se caracteriza por ser una de las zonas más comerciales y con mejor ambiente
                             nocturno de Bogotá.
                         </p>
