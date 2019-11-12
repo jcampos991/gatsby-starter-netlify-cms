@@ -10,19 +10,23 @@ import PostList from '../components/PostList';
 
 export const LandingPageTemplate = ({
     image1,
+    alt,
     title1,
     content1,
     ubication,
     feature1,
     feature2,
+    feature3,
     gallery,
-    video
+    video,
+    previewBlog
 }) => {
     return (
         <div className="main">
           <div className="t-bg">
               <Presentation 
                   img={image1}
+                  alt={alt}
                   principalTitle={title1}
                   content={content1}
                   ubication={ubication} />
@@ -35,8 +39,9 @@ export const LandingPageTemplate = ({
                 description={feature2.description}
                 video={video} />
           </div>
-          <PrincipalPost />
-          <PostList />
+          <PrincipalPost 
+            post={previewBlog} />
+          <PostList feature3={feature3} />
       </div>
     )
 } 
@@ -48,13 +53,16 @@ console.log('POST........ :', data);
     <TemplateWrapper2>
         <LandingPageTemplate 
             image1={post.frontmatter.image1.childImageSharp.fluid.src}
+            alt={post.frontmatter.alt}
             title1={post.frontmatter.title1}
             content1={post.frontmatter.content1.body}
             ubication={post.frontmatter.ubication}
             feature1={post.frontmatter.feature1}
             feature2={post.frontmatter.feature2}
+            feature3={post.frontmatter.feature3}
             gallery={post.frontmatter.gallery}
-            video={post.frontmatter.video} />
+            video={post.frontmatter.video}
+            previewBlog={post.frontmatter.previewBlog} />
     </TemplateWrapper2>
   )
 }
@@ -71,6 +79,7 @@ export const landingPageQuery = graphql`
         html
       frontmatter {
         title1
+        alt
         content1 {
           body
         }
@@ -85,6 +94,9 @@ export const landingPageQuery = graphql`
         feature2 {
           title
           description
+        }
+        feature3 {
+          title
         }
         video {
           urlVideo
@@ -109,6 +121,21 @@ export const landingPageQuery = graphql`
             }
             title
             alt
+          }
+        }
+        previewBlog {
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          title
+          alt
+          column1
+          column2 {
+            item
           }
         }
       }

@@ -2,6 +2,7 @@ import React from 'react'
 
 const Presentation = ({
     img,
+    alt,
     principalTitle,
     content,
     ubication
@@ -12,7 +13,7 @@ const Presentation = ({
                 <div className="row">
                     <div className="cover
                         col-md-6">
-                        <img src={img} alt="..." />
+                        <img src={img} alt={alt} />
                         <div className="price">
                             <p>APARTAMENTOS DESDE <span>$145.000.000</span></p>
                         </div>
