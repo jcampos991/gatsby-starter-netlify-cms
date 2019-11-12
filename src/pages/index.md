@@ -58,15 +58,10 @@ gallery:
     - alt: Texto alternativo para el cafe
       image: /img/blog-index.jpg
       title: Café
-feature2:
-  description: >-
-    A través del siguiente vídeo, URBAN 9/60 te da la bienvenida a sus cómodos y
-    bien distribuidos apartaestudios, con espacios indispensables para vivir y
-    disfrutar de un hogar con todo lo necesario.
-  title: Tus Espacios
 video:
+  urlVideo: 'https://www.youtube.com/embed/VVX5HWEElys'
+  width: 560
   height: 315
-<<<<<<< HEAD
 previewBlog: 
   image: /img/bitmap_2.png
   alt: conoce sobre chapinero
@@ -76,11 +71,6 @@ previewBlog:
 
 
     ```
-=======
-  urlVideo: 'https://www.youtube.com/embed/VVX5HWEElys'
-  width: 560
----
->>>>>>> ce5d2958f54262019dfba399d78977882e11a361
 
     'Actualmente, y según el último censo demográfico, cuenta con 125.750 habitantes, y se encuentra dividido en tres sectores urbanos: Chapinero, El Lago y Chicó. A su vez, Chapinero se divide en Alto y Central.'
 
