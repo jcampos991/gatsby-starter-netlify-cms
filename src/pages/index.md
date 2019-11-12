@@ -10,12 +10,18 @@ content1:
     entre 17 y 18 metros cuadrados.
 
 
+
+
     Urban 9/60 cuenta con modernas y amplias zonas comunes, coworking, gimnasio,
     piscina, spa, zona de mascotas, entre otros beneficios.
 
 
+
+
     ¡Tenemos apartamento modelo! Puedes dirigirte a nuestra sala de ventas en el
     parqueadero de la Calle 60 #9-34 en Chapinero Central.
+
+
 
 
     ¡Conoce tu nuevo hogar!
@@ -65,9 +71,9 @@ previewBlog:
     mejor ambiente nocturno de Bogotá.
 
 
-    'Actualmente, y según el último censo demográfico, cuenta con 125.750
+    Actualmente, y según el último censo demográfico, cuenta con 125.750
     habitantes, y se encuentra dividido en tres sectores urbanos: Chapinero, El
-    Lago y Chicó. A su vez, Chapinero se divide en Alto y Central.'
+    Lago y Chicó. A su vez, Chapinero se divide en Alto y Central.
 
 
     Por otra parte, casi el 50 % de sus habitantes son de un alto nivel
