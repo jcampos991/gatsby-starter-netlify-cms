@@ -1,7 +1,7 @@
 ---
 templateKey: landing-page
 title1: Este es otro texto
-image1: /img/bitmap-copy.png
+image1: /img/bitmap.png
 content1:
   body: >-
     Bienvenido a Urban 9/60, un proyecto innovador de vivienda ubicado en el

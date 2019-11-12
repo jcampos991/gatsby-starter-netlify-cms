@@ -5,7 +5,8 @@ const InfiniteCarousel = typeof window !== `undefined` ? require("react-leaf-car
 
 const CommonSpaces = ({
     title,
-    description
+    description,
+    gallery
 }) => {
     const [carousel, setCarousel] = useState(null);
     useEffect(() => {
@@ -39,39 +40,17 @@ const CommonSpaces = ({
             slidesToScroll={4}
             slidesToShow={4}
         >
-            <div className="item">
-                    <div className="cover">
-                        <img src="/img/Cowork.png" alt="Coworking" />
-                        <h4>Coworking</h4>
+            {
+                gallery.photos.map((photo, index) => (
+                    <div className="item">
+                        <div className="cover">
+                            <img 
+                                src={photo.image.childImageSharp.fluid.src} alt={photo.alt} />
+                            <h4>{photo.title}</h4>
+                        </div>
                     </div>
-                    {/* <a href="#" data-toggle="modal" data-target=""></a> */}
-                </div>
-                <div className="item">
-                    <div className="cover">
-                        <img src="/img/BBQ.png" alt="Zona con BBQ Urban 960" />
-                        <h4>Zona con BBQ</h4>
-                    </div>
-                    {/* <a href="#" data-toggle="modal" data-target=""></a> */}
-                </div>
-                <div className="item">
-                    <div className="cover">
-                        <img src="/img/Piscina.png" alt="Piscina" />
-                        <h4>Piscina</h4>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="cover">
-                        <img src="/img/Mascotas.png" alt="Patio de mascotas" />
-                        <h4>Mascotas</h4>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="cover">
-                        <img src="/img/SalaDeJuegos.png" alt="Sala de juegos" />
-                        <h4>Sala de juegos</h4>
-                    </div>
-                    {/* <a href="#" data-toggle="modal" data-target=""></a> */}
-                </div>
+                ))
+            }
         </InfiniteCarousel.default>
         setCarousel(component);
     }, [InfiniteCarousel]);
