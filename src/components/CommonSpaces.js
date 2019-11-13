@@ -43,7 +43,11 @@ const CommonSpaces = ({
                     <div className="item">
                         <div className="cover">
                             <img 
-                                src={photo.image.childImageSharp.fluid.src} alt={photo.alt} />
+                                src={
+                                    typeof(photo.image) === "object" 
+                                        ? photo.image.childImageSharp.fluid.src : photo.image
+                                } 
+                                alt={photo.alt} />
                             <h4>{photo.title}</h4>
                         </div>
                     </div>

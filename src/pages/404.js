@@ -1,13 +1,13 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import TemplateWrapper2 from '../components/Layout2';
 
 const NotFoundPage = () => (
-  <Layout>
+  <TemplateWrapper2>
     <div>
       <h1>NOT FOUND</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </div>
-  </Layout>
+  </TemplateWrapper2>
 )
 
 export default NotFoundPage

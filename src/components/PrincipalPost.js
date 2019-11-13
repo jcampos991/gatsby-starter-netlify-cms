@@ -11,7 +11,11 @@ const PrincipalPost = ({
             <div className="container">
                 <div className="row">
                     <div className="cover col-md-12">
-                        <img src={post.image.childImageSharp.fluid.src} alt="..." />
+                        <img src={
+                            typeof(post.image) 
+                                ? post.image.childImageSharp.fluid.src : post.image
+                            } 
+                            alt="..." />
                         <h4>{post.title}</h4>
                     </div>
                     <div className="col-md-6" id="article">
