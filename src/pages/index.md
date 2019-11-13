@@ -87,6 +87,7 @@ previewBlog:
     - item: >-
         Chapinero cuenta con más de 35 sedes de Colegios y múltiples
         universidades.
+    - item: Nuevo Item de la columna
     - item: >-
         Chapinero tiene dos de los mejores espacios naturales de la ciudad:
         Quebrada La Vieja y Quebrada Las Delicias.
