@@ -8,7 +8,6 @@ class BlogRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    console.log('posts :', posts);
     return (
       <div className="row">
         {posts &&
