@@ -21,7 +21,11 @@ export const BlogPostTemplate = ({
       <>
       {helmet || ''}
             <div className="container-fluid" id="content-image-noticia">
-                <img className="img-fluid" src={featuredimage.childImageSharp.fluid.src} alt="Responsive image" />
+                <img className="img-fluid" src={
+                    typeof(featuredimage) === "object" 
+                      ? featuredimage.childImageSharp.fluid.src : featuredimage
+                    } 
+                    alt="Responsive image" />
             </div>
             <div className="main">
                 <div className="featured">

@@ -5,8 +5,6 @@ import { LandingPageTemplate } from '../../templates/landing-page';
 
 const LandingPagePreview = ({ entry, widgetFor }) => {
     const data = entry.getIn(['data']).toJS()
-    console.log('DATA :', data);
-    // console.log("LANDING PREVIEW: ", entry.getIn(['data', 'title1', 'image1']).toJS()) 
     return(
         <LandingPageTemplate 
             image1={data.image1}
