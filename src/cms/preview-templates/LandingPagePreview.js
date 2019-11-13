@@ -20,6 +20,7 @@ const LandingPagePreview = ({ entry, widgetFor }) => {
             gallery={data.gallery}
             video={data.video}
             previewBlog={data.previewBlog} 
+            isPreview={true}
         />
     )
 }

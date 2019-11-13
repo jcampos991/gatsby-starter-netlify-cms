@@ -19,7 +19,8 @@ export const LandingPageTemplate = ({
     feature3,
     gallery,
     video,
-    previewBlog
+    previewBlog,
+    isPreview
 }) => {
     return (
         <div className="main">
@@ -41,7 +42,11 @@ export const LandingPageTemplate = ({
           </div>
           <PrincipalPost 
             post={previewBlog} />
-          <PostList feature3={feature3} />
+          {
+            !isPreview && (
+              <PostList feature3={feature3} />
+            )
+          }
       </div>
     )
 } 
@@ -66,8 +71,13 @@ const LandingPage = ({ data }) => {
   )
 }
 
+LandingPage.defaultProps = {
+  isPreview: false
+}
+
 LandingPage.propTypes = {
   data: PropTypes.object.isRequired,
+  isPreview: PropTypes.bool
 }
 
 export default LandingPage
