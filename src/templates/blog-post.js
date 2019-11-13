@@ -14,6 +14,7 @@ export const BlogPostTemplate = ({
   title,
   helmet,
   allPost,
+  isPreview
 }) => {
   const PostContent = contentComponent || Content
   
