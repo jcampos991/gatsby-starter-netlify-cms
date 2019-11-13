@@ -12,7 +12,7 @@ const PrincipalPost = ({
                 <div className="row">
                     <div className="cover col-md-12">
                         <img src={
-                            typeof(post.image) 
+                            typeof(post.image) === "object" 
                                 ? post.image.childImageSharp.fluid.src : post.image
                             } 
                             alt="..." />

@@ -6,6 +6,11 @@ const CommonSpaces = ({
     description,
     gallery
 }) => {
+    console.log("DATA DE COMMONSPACES: ", {
+        title,
+        description,
+        gallery
+    })
     const [carousel, setCarousel] = useState(null);
     useEffect(() => {
         const component = <InfiniteCarousel.default
@@ -40,7 +45,9 @@ const CommonSpaces = ({
         >
             {
                 gallery.photos.map((photo, index) => (
-                    <div className="item">
+                    <div
+                        key={`galkey${index}`} 
+                        className="item">
                         <div className="cover">
                             <img 
                                 src={
