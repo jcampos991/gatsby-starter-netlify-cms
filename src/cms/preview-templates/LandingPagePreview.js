@@ -4,7 +4,7 @@ import { AboutPageTemplate } from '../../templates/about-page'
 import { LandingPageTemplate } from '../../templates/landing-page';
 
 const LandingPagePreview = ({ entry, widgetFor }) => {
-    console.log("LANDING PREVIEW: ", entry.getIn(['data']))
+    console.log("LANDING PREVIEW: ", entry.getIn(['data'])).toJS()
     return(
         <div className="p-5 bg-primary">
             holla

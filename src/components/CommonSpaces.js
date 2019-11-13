@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import InfiniteCarousel from 'react-leaf-carousel';
-// const module = typeof window !== `undefined` ? require("module") : null
 const InfiniteCarousel = typeof window !== `undefined` ? require("react-leaf-carousel") : null
 
 const CommonSpaces = ({

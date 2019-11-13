@@ -11,13 +11,12 @@ export const BlogPostTemplate = ({
   featuredimage,
   content,
   contentComponent,
-  description,
-  tags,
   title,
   helmet,
   allPost,
 }) => {
   const PostContent = contentComponent || Content
+  
   return (
       <>
       {helmet || ''}
@@ -78,7 +77,7 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"

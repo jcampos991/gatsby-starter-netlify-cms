@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'URBAN 960 Apartamentos desde 145 Millones en Chapinero',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Urban 960 es un proyecto innovador de vivienda ubicado en Chapinero - Bogotá. que cuenta con modernas y amplias zonas comunes, coworking, gimnasio, piscina y spa.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

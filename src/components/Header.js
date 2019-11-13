@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Header = () => {
     return(
@@ -6,9 +7,9 @@ const Header = () => {
             <div className="container">
                 <div className="row">
                     <div className="logo col-md-4">
-                        <a href="/">
+                        <Link to="/">
                             <img src="/img/bitmap-copy.png" alt="..."/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
