@@ -38,9 +38,9 @@ export const BlogPostTemplate = ({
                                   className="blog text-justify"
                                   content={content} />
                             </div>
-                            {
-                              !isPreview && (
-                                <div className="col-md-4">
+                              <div className="col-md-4">
+                                {
+                                  !isPreview && (
                                     <ul
                                       style={{boxShadow: "none"}} 
                                       className="list">
@@ -53,9 +53,9 @@ export const BlogPostTemplate = ({
                                         ))
                                       }
                                     </ul>
-                                </div>
-                              )
-                            }
+                                    )
+                                  }
+                              </div>
                         </div>
                     </div>
                 </div>
