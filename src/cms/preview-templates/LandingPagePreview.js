@@ -8,22 +8,20 @@ const LandingPagePreview = ({ entry, widgetFor }) => {
     console.log('DATA :', data);
     // console.log("LANDING PREVIEW: ", entry.getIn(['data', 'title1', 'image1']).toJS()) 
     return(
-        <div className="p-5 bg-primary">
-            holla
-        </div>
+        <LandingPageTemplate 
+            image1={data.image1}
+            alt={data.alt}
+            title1={data.title1}
+            content1={data.content1.body}
+            ubication={data.ubication}
+            feature1={data.feature1}
+            feature2={data.feature2}
+            feature3={data.feature3}
+            gallery={data.gallery}
+            video={data.video}
+            previewBlog={data.previewBlog} 
+        />
     )
-    // <LandingPageTemplate 
-    //     image1={post.frontmatter.image1.childImageSharp.fluid.src}
-    //     alt={post.frontmatter.alt}
-    //     title1={post.frontmatter.title1}
-    //     content1={post.frontmatter.content1.body}
-    //     ubication={post.frontmatter.ubication}
-    //     feature1={post.frontmatter.feature1}
-    //     feature2={post.frontmatter.feature2}
-    //     feature3={post.frontmatter.feature3}
-    //     gallery={post.frontmatter.gallery}
-    //     video={post.frontmatter.video}
-    //     previewBlog={post.frontmatter.previewBlog} />
-    }
+}
 
 export default LandingPagePreview
