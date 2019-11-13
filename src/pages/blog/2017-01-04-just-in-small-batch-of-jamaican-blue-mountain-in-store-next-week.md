@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Créditos de vivienda: Cómo Comprar un apartamento en Bogotá'
+description: Otra descripción
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 featuredimage: /img/credito_bogota.png
