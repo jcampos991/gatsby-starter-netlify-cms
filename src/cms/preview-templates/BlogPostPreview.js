@@ -7,6 +7,7 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
   return(
     <BlogPostTemplate
       featuredimage={entry.getIn(['data', 'featuredimage'])}
+      alt={entry.getIn(['data', 'alt'])}
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
       tags={entry.getIn(['data', 'tags'])}

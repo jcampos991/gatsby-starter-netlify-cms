@@ -9,6 +9,7 @@ import TemplateWrapper2 from '../components/Layout2';
 
 export const BlogPostTemplate = ({
   featuredimage,
+  alt,
   content,
   contentComponent,
   title,
@@ -26,7 +27,7 @@ export const BlogPostTemplate = ({
                     typeof(featuredimage) === "object" 
                       ? featuredimage.childImageSharp.fluid.src : featuredimage
                     } 
-                    alt="Responsive image" />
+                    alt={alt} />
             </div>
             <div className="main">
                 <div className="featured">
@@ -87,6 +88,7 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         allPost={allPost}
         featuredimage={post.frontmatter.featuredimage}
+        alt={post.frontmatter.alt}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
