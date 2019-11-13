@@ -37,20 +37,24 @@ export const BlogPostTemplate = ({
                                   className="blog text-justify"
                                   content={content} />
                             </div>
-                            <div className="col-md-4">
-                                <ul
-                                  style={{boxShadow: "none"}} 
-                                  className="list">
-                                  {
-                                    allPost.map(({node}, index) => (
-                                      <li key={`post${node}`}>
-                                        <Link
-                                          to={node.fields.slug}>{node.frontmatter.title}</Link>
-                                      </li>
-                                    ))
-                                  }
-                                </ul>
-                            </div>
+                            {
+                              !isPreview && (
+                                <div className="col-md-4">
+                                    <ul
+                                      style={{boxShadow: "none"}} 
+                                      className="list">
+                                      {
+                                        allPost.map(({node}, index) => (
+                                          <li key={`post${node}`}>
+                                            <Link
+                                              to={node.fields.slug}>{node.frontmatter.title}</Link>
+                                          </li>
+                                        ))
+                                      }
+                                    </ul>
+                                </div>
+                              )
+                            }
                         </div>
                     </div>
                 </div>
@@ -59,12 +63,17 @@ export const BlogPostTemplate = ({
   )
 }
 
+BlogPostTemplate.defaultProps = {
+  isPreview: false
+}
+
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  isPreview: PropTypes.bool
 }
 
 const BlogPost = ({ data }) => {
