@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'Avenir Next LT Pro';
-    font-display: auto;
+    font-display: swap;
     src: url('/fonts/AvenirNextLTPro-Regular.eot');
     src: url('/fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
          url('/fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
@@ -16,6 +16,7 @@
 }
 @font-face {
     font-family: 'Avenir Next LT Pro';
+    font-display: swap;
     src: url('/fonts/AvenirNextLTPro-Demi.eot');
     src: url('/fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
          url('/fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
@@ -26,6 +27,7 @@
 }
 @font-face {
     font-family: 'Avenir Next LT Pro';
+    font-display: swap;
     src: url('/fonts/AvenirNextLTPro-Bold.eot');
     src: url('/fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
          url('/fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),

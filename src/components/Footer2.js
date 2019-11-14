@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import axios from 'axios';
@@ -22,6 +22,13 @@ const schema = Yup.object().shape({
         .email(EMAIL_FIELD)
         .required(REQUIRED_FIELD)
   });
+
+const FIELDS = [
+    {type: "text", name: "cedula", placeholder:"Cédula"},
+    {type: "text", name: "firstname", placeholder:"Nombre"},
+    {type: "text", name: "phone", placeholder:"Teléfono"},
+    {type: "email", name: "email", placeholder:"Email"},
+]
 
 const Footer2 = ({ search }) => {
     const initialValues = {cedula: "", firstname: "", phone: "", email: ""};
@@ -71,8 +78,6 @@ const Footer2 = ({ search }) => {
                         <div className="box">
                             <div className="titl">
                                 <h2>SOLICITA MÁS INFORMACIÓN</h2>
-                                {/* <p class="par">Regístrate y recibe tu invitación para el gran lanzamiento
-                                    ¡Obtén los mejores precios!</p> */}
                             </div>
                             <Formik
                                 validationSchema={schema}
@@ -89,54 +94,24 @@ const Footer2 = ({ search }) => {
                                     }) => (
                                         <form 
                                             className="contact-hub">
-                                            <div className="mb-4 pb-3">
-                                                <Field 
-                                                    type="text"
-                                                    name="cedula"
-                                                    placeholder="Cédula"
-                                                    className="form-control" />
-                                                {errors.cedula && touched.cedula && (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.cedula}
-                                                    </div>
-                                                )}
-                                            </div>
-                                            <div className="mb-4 pb-3">
-                                                <Field 
-                                                    type="text"
-                                                    name="firstname"
-                                                    placeholder="Nombre"
-                                                    className="form-control" />
-                                                {errors.firstname && touched.firstname && (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.firstname}
-                                                    </div>
-                                                )}
-                                            </div>
-                                            <div className="mb-4 pb-3">
-                                                <Field 
-                                                    type="text"
-                                                    name="phone"
-                                                    placeholder="Teléfono"
-                                                    className="form-control" />
-                                                {errors.phone && touched.phone && (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.phone}
-                                                    </div>
-                                                )}
-                                            </div>
-                                            <div className="mb-4 pb-3">
-                                                <Field 
-                                                    type="email"
-                                                    name="email"
-                                                    placeholder="Email"
-                                                    className="form-control" />
-                                                {errors.email && touched.email && (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.email}
-                                                    </div>
-                                                )}
-                                            </div>
+                                            {
+                                                FIELDS.map((item, index) => (
+                                                    <div
+                                                        key={`field${index}`} 
+                                                        className="mb-4 pb-3">
+                                                        <Field 
+                                                            type={item.type}
+                                                            name={item.name}
+                                                            placeholder={item.placeholder}
+                                                            className="form-control" />
+                                                        {errors[item.name] && touched[item.name] && (
+                                                            <div className="invalid-feedback d-block">
+                                                                {errors[item.name]}
+                                                            </div>
+                                                        )}
+                                                    </div> 
+                                                ))
+                                            }
                                             <div className="form-group text-center frm-send">
                                                 <button 
                                                     disabled={!isValid}

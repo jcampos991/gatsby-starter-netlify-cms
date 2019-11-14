@@ -50,23 +50,37 @@ export const LandingPageTemplate = ({
       </div>
     )
 } 
+
 const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data
+  const {
+    image1, 
+    alt, 
+    title1, 
+    content1,
+    ubication,
+    feature1,
+    feature2,
+    feature3,
+    gallery,
+    video,
+    previewBlog
+  } = post.frontmatter;
 
   return (
     <TemplateWrapper2>
         <LandingPageTemplate 
-            image1={post.frontmatter.image1.childImageSharp.fluid.src}
-            alt={post.frontmatter.alt}
-            title1={post.frontmatter.title1}
-            content1={post.frontmatter.content1.body}
-            ubication={post.frontmatter.ubication}
-            feature1={post.frontmatter.feature1}
-            feature2={post.frontmatter.feature2}
-            feature3={post.frontmatter.feature3}
-            gallery={post.frontmatter.gallery}
-            video={post.frontmatter.video}
-            previewBlog={post.frontmatter.previewBlog} />
+            image1={image1.childImageSharp.fluid.src}
+            alt={alt}
+            title1={title1}
+            content1={content1.body}
+            ubication={ubication}
+            feature1={feature1}
+            feature2={feature2}
+            feature3={feature3}
+            gallery={gallery}
+            video={video}
+            previewBlog={previewBlog} />
     </TemplateWrapper2>
   )
 }

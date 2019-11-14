@@ -13,7 +13,7 @@ const YourSpace = ({
                     <p className="par">{description}</p>
                 </div>
                 <div className="container" id="content-video">
-                    <iframe className="video-link" width={video.width} height={video.height}
+                    <iframe title="video embebido" className="video-link" width={video.width} height={video.height}
                         src={video.urlVideo} frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>

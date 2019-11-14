@@ -7,7 +7,7 @@ const CommonSpaces = ({
     gallery
 }) => {
     const [carousel, setCarousel] = useState(null);
-    
+
     useEffect(() => {
         const component = <InfiniteCarousel.default
             breakpoints={[
@@ -58,7 +58,7 @@ const CommonSpaces = ({
             }
         </InfiniteCarousel.default>
         setCarousel(component);
-    }, [InfiniteCarousel]);
+    }, [gallery.photos]);
 
     return(
         <div className="yourspace anoth">

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
   render() {
@@ -12,20 +11,20 @@ class BlogRoll extends React.Component {
       <div className="row">
         {posts &&
           posts.map(({ node: post }, index) => (
-                    <div
-                      key={`post${index}`} 
-                      className="item col-md-4">
-                        <Link
-                            to={post.fields.slug}
-                          >
-                            {
-                              post.frontmatter.featuredimage && (
-                                <img src={post.frontmatter.featuredimage.childImageSharp.fluid.src} alt="Proyecto urban 960 Chapinero" />
-                              )
-                            }
-                            <h4>{post.frontmatter.title}</h4>
-                        </Link>
-                    </div>
+            <div
+              key={`post${index}`} 
+              className="item col-md-4">
+                <Link
+                    to={post.fields.slug}
+                  >
+                    {
+                      post.frontmatter.featuredimage && (
+                        <img src={post.frontmatter.featuredimage.childImageSharp.fluid.src} alt="Proyecto urban 960 Chapinero" />
+                      )
+                    }
+                    <h4>{post.frontmatter.title}</h4>
+                </Link>
+            </div>
           ))}
       </div>
     )
