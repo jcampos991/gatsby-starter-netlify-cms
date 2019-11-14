@@ -11,8 +11,10 @@ class BlogRoll extends React.Component {
     return (
       <div className="row">
         {posts &&
-          posts.map(({ node: post }) => (
-                    <div className="item col-md-4">
+          posts.map(({ node: post }, index) => (
+                    <div
+                      key={`post${index}`} 
+                      className="item col-md-4">
                         <Link
                             to={post.fields.slug}
                           >

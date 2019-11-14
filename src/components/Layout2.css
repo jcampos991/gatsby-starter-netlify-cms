@@ -551,7 +551,6 @@ ul.list li:before{
     outline: none;
     font-size: 16px;
     border-radius: 4px;
-    margin-bottom: 2.5em;
     border: solid 1px #dcdcdc;
     background-color: #f6f6f6;
 }
